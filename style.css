@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+header{
+    background-color: red;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    height: 50px;
+}
+.filters{
+    width: 30%;
+    height: 100vh;
+    background-color: blue;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    position: absolute;
+    top: 30px;
+    right: 0px;
+    padding: 20px;
+}
+.filters input{
+    width: 40%;
+    height: 30px;
+    margin: 0 auto;
+}
+.filters button{
+    width: 50%;
+    height: 40px;
+    border-radius: 15px;
+    border: 2px solid red;
+    margin: 20px auto;
+    cursor: pointer;
+}
+.exitFilters{
+    position: absolute;
+    cursor: pointer;
+}

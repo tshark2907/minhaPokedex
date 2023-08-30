@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Pokedex</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+    <header>
+        <h3>Pokedex</h3>
+    </header>
+    <section class="filters">
+        <span class="material-symbols-outlined exitFilters">close</span>
+
+        <span class="exitFilters"></span>
+
+        <label for="type">Tipo</label>
+        <input type="text" id="type" name="type">
+
+        <label for="generation">Geração</label>
+        <input type="text" id="generation" name="generation">
+
+        <label for="ability">Habilidade</label>
+        <input type="text" id="ability" name="ability">
+
+        <label for="rarity">Habilidade</label>
+        <input type="text" id="rarity" name="rarity">
+
+        <button type="button applyFilters">Aplicar</button>
+    </section>
+    <section class="pokedexContainer">
+        <div class="pokedexEntry">
+            <img class="pokemonImage" src="/">
+            <div class="pokemonInfo">
+                <span class="pokemonName"></span>
+                <span class="pokemonNumber"></span>
+                <div class="pokemonTypeage">
+                    <span class="type1"></span>
+                </div>
+                <button class="seeMore">Ver Mais</button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
