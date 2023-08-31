@@ -13,39 +13,252 @@
 <body>
     <header>
         <h3>Pokedex</h3>
+        <img id="pokeball" src="/idlePokeball.png">
     </header>
     <section class="filters">
         <span class="material-symbols-outlined exitFilters">close</span>
 
         <span class="exitFilters"></span>
 
-        <label for="type">Tipo</label>
-        <input type="text" id="type" name="type">
+        <span>Filtrar por tipo</span>
+        <ul class="types">
+            <li class="grass">
+                <input type="checkbox" name="grass" id="grass">
+                <label for="grass">Grama</label>
+            </li>
+            <li class="fire">
+                <input type="checkbox" name="fire" id="fire">
+                <label for="fire">Fogo</label>
+            </li>
+            <li class="water">
+                <input type="checkbox" name="water" id="water">
+                <label for="water">Água</label>
+            </li>
+            <li class="electric">
+                <input type="checkbox" name="electric" id="electric">
+                <label for="electric">Elétrico</label>
+            </li>
+            <li class="poison">
+                <input type="checkbox" name="poison" id="poison">
+                <label for="poison">Venenoso</label>
+            </li>
+            <li class="normal">
+                <input type="checkbox" name="normal" id="normal">
+                <label for="normal">Normal</label>
+            </li>
+            <li class="rock">
+                <input type="checkbox" name="rock" id="rock">
+                <label for="rock">Pedra</label>
+            </li>
+            <li class="psychic">
+                <input type="checkbox" name="psychic" id="psychic">
+                <label for="psychic">Psíquico</label>
+            </li>
+            <li class="ghost">
+                <input type="checkbox" name="ghost" id="ghost">
+                <label for="ghost">Fantasma</label>
+            </li>
+            <li class="fighter">
+                <input type="checkbox" name="fighter" id="fighter">
+                <label for="fighter">Lutador</label>
+            </li>
+            <li class="dragon">
+                <input type="checkbox" name="dragon" id="dragon">
+                <label for="dragon">Dragão</label>
+            </li>
+            <li class="bug">
+                <input type="checkbox" name="bug" id="bug">
+                <label for="bug">Inseto</label>
+            </li>
+            <li class="steel">
+                <input type="checkbox" name="steel" id="steel">
+                <label for="steel">Aço</label>
+            </li>
+            <li class="ground">
+                <input type="checkbox" name="ground" id="ground">
+                <label for="ground">Solo</label>
+            </li>
+            <li class="fairy">
+                <input type="checkbox" name="fairy" id="fairy">
+                <label for="fairy">Fada</label>
+            </li>
+        </ul>
 
-        <label for="generation">Geração</label>
-        <input type="text" id="generation" name="generation">
-
-        <label for="ability">Habilidade</label>
-        <input type="text" id="ability" name="ability">
-
-        <label for="rarity">Habilidade</label>
-        <input type="text" id="rarity" name="rarity">
+        <span>Filtrar por geração</span>
+        <ul class="generation">
+            <li>
+                <input type="checkbox" name="first" id="first">
+                <label for="first">1ª Geração</label>
+            </li>
+            <li>
+                <input type="checkbox" name="second" id="second">
+                <label for="second">2ª Geração</label>
+            </li>
+            <li>
+                <input type="checkbox" name="third" id="third">
+                <label for="third">3ª Geração</label>
+            </li>
+            <li>
+                <input type="checkbox" name="fourth" id="fourth">
+                <label for="fourth">4ª Geração</label>
+            </li>
+            <li>
+                <input type="checkbox" name="fifth" id="fifth">
+                <label for="fifth">5ª Geração</label>
+            </li>
+            <li>
+                <input type="checkbox" name="sixth" id="sixth">
+                <label for="sixth">6ª Geração</label>
+            </li>
+            <li>
+                <input type="checkbox" name="seventh" id="seventh">
+                <label for="seventh">7ª Geração</label>
+            </li>
+            <li>
+                <input type="checkbox" name="eight" id="eight">
+                <label for="eight">8ª Geração</label>
+            </li>
+            <li>
+                <input type="checkbox" name="nineth" id="nineth">
+                <label for="nineth">9ª Geração</label>
+            </li>
+        </ul>
 
         <button type="button applyFilters">Aplicar</button>
     </section>
     <section class="pokedexContainer">
-        <div class="pokedexEntry">
-            <img class="pokemonImage" src="/">
+        <div class="pokedexEntry grass">
+            <img class="pokemonImage" src="/activePokeball.png">
             <div class="pokemonInfo">
-                <span class="pokemonName"></span>
-                <span class="pokemonNumber"></span>
-                <div class="pokemonTypeage">
-                    <span class="type1"></span>
-                    <span class="type2"></span>
+                <div class="pokemonTitle">
+                    <span class="pokemonNumber">#001</span>
+                    <span class="pokemonName">Bulbasaur</span>
                 </div>
-                <button class="seeMore">Ver Mais</button>
+                <ul class="pokemonTypeage">
+                    <li class="type1 grass">Grama</li>
+                    <li class="type2 poison">Venenoso</li>
+                </ul>
             </div>
         </div>
+        <div class="pokedexEntry grass">
+            <img class="pokemonImage" src="/activePokeball.png">
+            <div class="pokemonInfo">
+                <div class="pokemonTitle">
+                    <span class="pokemonNumber">#001</span>
+                    <span class="pokemonName">Bulbasaur</span>
+                </div>
+                <ul class="pokemonTypeage">
+                    <li class="type1 grass">Grama</li>
+                    <li class="type2 poison">Venenoso</li>
+                </ul>
+            </div>
+        </div>
+        <div class="pokedexEntry grass">
+            <img class="pokemonImage" src="/activePokeball.png">
+            <div class="pokemonInfo">
+                <div class="pokemonTitle">
+                    <span class="pokemonNumber">#001</span>
+                    <span class="pokemonName">Bulbasaur</span>
+                </div>
+                <ul class="pokemonTypeage">
+                    <li class="type1 grass">Grama</li>
+                    <li class="type2 poison">Venenoso</li>
+                </ul>
+            </div>
+        </div>
+        <div class="pokedexEntry grass">
+            <img class="pokemonImage" src="/activePokeball.png">
+            <div class="pokemonInfo">
+                <div class="pokemonTitle">
+                    <span class="pokemonNumber">#001</span>
+                    <span class="pokemonName">Bulbasaur</span>
+                </div>
+                <ul class="pokemonTypeage">
+                    <li class="type1 grass">Grama</li>
+                    <li class="type2 poison">Venenoso</li>
+                </ul>
+            </div>
+        </div>
+        <div class="pokedexEntry grass">
+            <img class="pokemonImage" src="/activePokeball.png">
+            <div class="pokemonInfo">
+                <div class="pokemonTitle">
+                    <span class="pokemonNumber">#001</span>
+                    <span class="pokemonName">Bulbasaur</span>
+                </div>
+                <ul class="pokemonTypeage">
+                    <li class="type1 grass">Grama</li>
+                    <li class="type2 poison">Venenoso</li>
+                </ul>
+            </div>
+        </div>
+        <div class="pokedexEntry grass">
+            <img class="pokemonImage" src="/activePokeball.png">
+            <div class="pokemonInfo">
+                <div class="pokemonTitle">
+                    <span class="pokemonNumber">#001</span>
+                    <span class="pokemonName">Bulbasaur</span>
+                </div>
+                <ul class="pokemonTypeage">
+                    <li class="type1 grass">Grama</li>
+                    <li class="type2 poison">Venenoso</li>
+                </ul>
+            </div>
+        </div>
+        <div class="pokedexEntry grass">
+            <img class="pokemonImage" src="/activePokeball.png">
+            <div class="pokemonInfo">
+                <div class="pokemonTitle">
+                    <span class="pokemonNumber">#001</span>
+                    <span class="pokemonName">Bulbasaur</span>
+                </div>
+                <ul class="pokemonTypeage">
+                    <li class="type1 grass">Grama</li>
+                    <li class="type2 poison">Venenoso</li>
+                </ul>
+            </div>
+        </div>
+        <div class="pokedexEntry grass">
+            <img class="pokemonImage" src="/activePokeball.png">
+            <div class="pokemonInfo">
+                <div class="pokemonTitle">
+                    <span class="pokemonNumber">#001</span>
+                    <span class="pokemonName">Bulbasaur</span>
+                </div>
+                <ul class="pokemonTypeage">
+                    <li class="type1 grass">Grama</li>
+                    <li class="type2 poison">Venenoso</li>
+                </ul>
+            </div>
+        </div>
+        <div class="pokedexEntry grass">
+            <img class="pokemonImage" src="/activePokeball.png">
+            <div class="pokemonInfo">
+                <div class="pokemonTitle">
+                    <span class="pokemonNumber">#001</span>
+                    <span class="pokemonName">Bulbasaur</span>
+                </div>
+                <ul class="pokemonTypeage">
+                    <li class="type1 grass">Grama</li>
+                    <li class="type2 poison">Venenoso</li>
+                </ul>
+            </div>
+        </div>
+        <div class="pokedexEntry grass">
+            <img class="pokemonImage" src="/activePokeball.png">
+            <div class="pokemonInfo">
+                <div class="pokemonTitle">
+                    <span class="pokemonNumber">#001</span>
+                    <span class="pokemonName">Bulbasaur</span>
+                </div>
+                <ul class="pokemonTypeage">
+                    <li class="type1 grass">Grama</li>
+                    <li class="type2 poison">Venenoso</li>
+                </ul>
+            </div>
+        </div>
+        <span class="material-symbols-outlined expand_more">expand_more</span>
     </section>
+    <script src="/app.js" defer></script>
 </body>
 </html>
